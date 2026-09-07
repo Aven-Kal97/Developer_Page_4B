@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Primero se pone normalize-->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css"link>
+
+    <!--Nuestro propio css-->
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css"link>
     <title>Developer pagina</title>
 </head>
 <body>
     <header>
-        <h1>Developer pagina</h1>
+        <h1 class="my-title">Angel Abraham Lugo Saenz<span>Developer</span></h1>
     </header>
     <nav>
         <a href="#">Inicio</a>
@@ -20,8 +27,7 @@
             <!--
 category: Brand
 version: "2.16"
-unicode: "fa4f"
--->
+unicode: "fa4f"-->
             <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"
@@ -150,6 +156,35 @@ unicode: "fd74"
 </main>
     <section>
         <h2>Contacto</h2>
+        <form>
+            <fieldset>
+                <legend>Llena tus datos de contacto</legend>
+                <div>
+                    <label>Nombre completo</label>
+                    <input type="text" placeholder="Nombre cmpleto">
+                </div>
+
+                <div>
+                    <label>Telefono</label>
+                    <input type="tel" placeholder="Tu telefono">
+                </div>
+
+                <div>
+                    <label>Email</label>
+                    <input type="email" placeholder="TU email">
+                </div>
+
+                <div>
+                    <label>Mensaje</label>
+                    <textarea></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" value="Enviar"/>
+                </div>
+
+            </fieldset>
+        </form>
     </section>
     <footer>
         <p>Todos los derechos reservados ©. Angel Abraham Lugo Saenz Dev 2026</p>
